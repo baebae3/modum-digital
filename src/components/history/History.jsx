@@ -19,13 +19,18 @@ export default function History() {
       {history.map((history, index) => {
         return (
           <div className={styles.history_item} key={index}>
-           <span>
+            <div className={styles.status_bar}>
+            <span>
             {history.hours}:{history.minutes}:{history.seconds}
            </span>
             <p>
               {history.isRemoved ? "[Удален] " : "[Подарен] "}
-              {history.giftType}
             </p>
+            </div>
+          <p>
+          {history.giftType}
+
+          </p>
             <button onClick={() => returnGifts(history.history)}>
               Вернуться
             </button>

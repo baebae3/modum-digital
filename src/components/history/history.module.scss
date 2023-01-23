@@ -5,6 +5,13 @@
     min-height: 500px;
     padding: 30px;
     margin: 20px;
+    .status_bar {
+        display: flex;
+        align-items: center;
+        p {
+            margin-left: 10px;
+        }
+    }
     h1 {
         font-size: 30px;
     }
