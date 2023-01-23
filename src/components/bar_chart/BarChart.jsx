@@ -7,7 +7,7 @@ export default function BarChart({ barChartConfig }) {
     return (
         <div className={styles.bar_wrapper}>
             <h1>
-                Распределение по полу и возрастам
+                Распределение по полу и возрастам:
             </h1>
             <Bar data={barChartConfig} />
         </div>
