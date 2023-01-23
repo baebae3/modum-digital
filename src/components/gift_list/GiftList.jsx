@@ -11,6 +11,8 @@ export default function GiftList() {
 
   const allGifts = useSelector((store) => store.gifts);
 
+  const [date, setDate] = useState(new Date)
+
   const [currentGift, setCurrentGift] = useState({
     giftType: "Дикий Авимим",
     gender: "Мальчик",
@@ -35,6 +37,9 @@ export default function GiftList() {
         giftType: currentGift.giftType,
         history: currentGift.history,
         isRemoved: currentGift.isRemoved,
+        hours: date.getHours(),
+        minutes: date.getMinutes(),
+        seconds: date.getSeconds()
       })
     );
   };
@@ -51,6 +56,7 @@ export default function GiftList() {
   };
 
   useEffect(() => {
+    setDate(new Date)
     setCurrentGift((prev) => ({
       ...prev,
       history: allGifts,
