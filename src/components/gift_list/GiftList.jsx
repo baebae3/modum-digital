@@ -126,7 +126,7 @@ export default function GiftList() {
                 <h2>{gift.giftType}</h2>
                 <button onClick={() => removeGift(gift)}>Удалить</button>
               </div>
-              <p>Пол: {gift.gender == "М" ? "Мужской" : "Женский"}</p>
+              <p>Пол: {gift.gender == "Мальчик" ? "Мужской" : "Женский"}</p>
               <p>Возраст: {gift.age}</p>
             </li>
           );
