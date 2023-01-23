@@ -1,0 +1,27 @@
+.history_wrapper {
+    width: 40%;
+    background-color: white;
+    border-radius: 40px;
+    min-height: 500px;
+    padding: 30px;
+    margin: 20px;
+    p {
+        font-size: 18px;
+    }
+    button {
+        color: white;
+        padding: 10px;
+        border: none;
+        background-color: rgb(102, 167, 241);
+        &:hover {
+            background-color: rgb(67, 147, 238);
+        }
+    }
+    .history_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(203, 200, 200); ;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,63 @@
+.gift_list {
+        width: 40%;
+        background-color: white;
+        border-radius: 40px;
+        min-height: 500px;
+        padding: 30px;
+        margin: 20px;
+        select {
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            border: 1px solid rgb(203, 200, 200);
+            margin: 10px;
+        }
+        [type=radio] {
+            margin: 10px;
+        }
+        [type=number] {
+            outline: none;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid rgb(203, 200, 200);
+        }
+    .add_btn {
+        color: white;
+        padding: 10px;
+        border: none;
+        background-color: rgb(102, 167, 241);
+        &:hover {
+            background-color: rgb(67, 147, 238);
+        }
+    }
+    ul {
+        margin: 10px;
+        padding: 0;
+        list-style-type: none;
+        .gift_list_header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(203, 200, 200);
+        }
+        li {
+            margin-top: 10px;
+             border: 1px solid rgb(203, 200, 200);
+             h2 {
+                margin: 20px;
+             }
+             button {
+                margin: 10px;
+                background-color: transparent;
+                border: none;
+                color: rgb(220, 1, 1);
+                font-weight: 700;
+                font-size: 16px;
+             }
+             p {
+                margin: 20px;
+             }
+        }
+    }
+}
