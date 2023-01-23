@@ -6,6 +6,9 @@ export default function PieChart({ pieChartData }) {
 
     return (
         <div className={styles.pie_wrapper}>
+            <h1>
+                Распределение по сказочным животным:
+            </h1>
             <Pie data={pieChartData} />
         </div>
     )

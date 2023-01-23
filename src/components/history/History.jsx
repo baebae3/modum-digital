@@ -13,6 +13,9 @@ export default function History() {
   };
   return (
     <div className={styles.history_wrapper}>
+        <h1>
+            История действий:
+        </h1>
       {history.map((history, index) => {
         return (
           <div className={styles.history_item} key={index}>

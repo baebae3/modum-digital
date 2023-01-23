@@ -60,6 +60,9 @@ export default function GiftList() {
 
   return (
     <div className={styles.gift_list}>
+        <h1>
+            Подарить подарок
+        </h1>
       <select
         name="giftType"
         value={currentGift.giftType}
@@ -103,6 +106,9 @@ export default function GiftList() {
       <button className={styles.add_btn} onClick={() => setGift(currentGift)}>
         Добавить
       </button>
+      <h1>
+        Cписок подарков:
+      </h1>
       <ul>
         {allGifts.map((gift) => {
           return (
