@@ -51,6 +51,9 @@ export default function GiftList() {
         giftType: gift.giftType,
         isRemoved: true,
         history: currentGift.history,
+        hours: date.getHours(),
+        minutes: date.getMinutes(),
+        seconds: date.getSeconds()
       })
     );
   };
