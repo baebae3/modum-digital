@@ -11,7 +11,6 @@ import { giftCountHandler, genderCountHandler } from './store/reducers/charts'
 
 function App() {
   const dispatch = useDispatch()
-  const statastsata= ''
 
   const allGifts = useSelector(store => store.gifts)
   const giftsCount = useSelector(store => store.charts.giftCount)
